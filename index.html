@@ -1238,6 +1238,27 @@ body { position:relative !important; }
 }
 
 </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:...&display=swap" rel="stylesheet">
+<!-- BrandMath Sales Agent — Visitor Tracking -->
+<script>
+(function() {
+  try {
+    var d = {
+      p: window.location.pathname,
+      r: document.referrer || '',
+      t: new Date().toISOString(),
+      u: navigator.userAgent.substring(0, 80)
+    };
+    fetch('https://vashti-unermined-warner.ngrok-free.dev/visitor', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(d),
+      keepalive: true
+    }).catch(function(){});
+  } catch(e) {}
+})();
+</script>
+<!-- End BrandMath Tracking -->
 </head>
 <body>
 
